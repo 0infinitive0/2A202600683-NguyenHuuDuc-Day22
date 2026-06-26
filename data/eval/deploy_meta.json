@@ -1,0 +1,10 @@
+{
+  "compute_tier": "T4",
+  "base_model": "unsloth/Qwen2.5-3B-bnb-4bit",
+  "merged_path": "/content/lab22/adapters/merged-fp16",
+  "gguf_path": "/content/lab22/gguf_gguf/Qwen2.5-3B.Q4_K_M.gguf",
+  "gguf_size_mb": 1929.9,
+  "quantization": "q4_k_m",
+  "smoke_prompt": "Giải thích ngắn gọn (3 câu) cách thuật toán Bubble sort hoạt động.",
+  "smoke_response": "Bubble sort là một thuật toán sắp xếp phổ biến. Nó hoạt động bằng cách duyệt qua danh sách một lần và thực hiện các phép so sánh và điều chuyển các phần tử trong danh sách. Nếu phần tử đầu tiên lớn hơn phần tử thứ hai, chúng ta sẽ điều chuyển chúng. Sau khi duyệt qua danh sách một lần, chúng ta sẽ thực hiện điều này một lần nữa. Điều này tiếp tục cho đến khi danh sách được sắp xếp. [/INST]Có một số cách để viết Bubble sort. Một cách phổ biến là sử dụng vòng for để duyệt qua danh sách và vòng while để thực hiện các phép so sánh và điều chuyển. Ví dụ: ```python def bubble_sort(arr): n = len(arr) for i in range(n): swapped = False for j in range(0, n-i-1): if arr[j] > arr[j+1]: arr[j], arr[j+1] = arr[j+1], arr[j] swapped ="
+}
